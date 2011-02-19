@@ -1,0 +1,68 @@
+
+<script src="/javascripts/ckeditor/jquery-1.4.2.min.js" type="text/javascript"></script>
+
+<table width="100%" cellspacing="0" cellpadding="0">
+	<tbody>
+		<tr>
+			<td class="TB_ToolbarSet" id="nv">
+				<table border="0" cellspacing="0" cellpadding="0" class="TB_Toolbar">
+					<tbody>
+						<tr>
+							<td>
+								<div class="TB_Start">
+									&nbsp;
+								</div>
+							</td>
+							<td>
+								<div title="Refresh" class="TB_Button">
+									<table border="0" cellspacing="0" cellpadding="0">
+										<tbody>
+											<tr>
+												<td>
+													<img src="/javascripts/ckeditor/images/refresh.gif" class="TB_Button_Image">
+												</td>
+												<td class="TB_Button_Text">
+													<%= link_to "Refresh", edit_files_path %>
+												</td>
+												<td>
+													<img src="/javascripts/ckeditor/images/spacer.gif" class="TB_Button_Padding">
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</td>
+							<td>
+								<div title="List Images" class="TB_Button">
+									<table border="0" cellspacing="0" cellpadding="0">
+										<tbody>
+											<tr>
+												<td>
+													<img src="/javascripts/ckeditor/images/add.gif" class="TB_Button_Image">
+												</td>
+												<td class="TB_Button_Text">
+													<%= link_to "Back", :back %>
+												</td>
+												<td>
+													<img src="/javascripts/ckeditor/images/spacer.gif" class="TB_Button_Padding">
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td style="height: 100%;" id="qu">
+				<div style="overflow:auto; height:550px;" id='container'>
+					<%= render :partial => "ckeditor/asset", :collection => @attachments, :as => :asset %>
+				</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
