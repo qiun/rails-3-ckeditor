@@ -1,6 +1,6 @@
 <div class="FCKThumb">
 	<% if controller.action_name == 'edit_images' %>
-		<%= link_to '[X]', "/ckeditor/pictures/#{asset.id}", :class => 'remote-delete'%>
+		<%= link_to '', "/ckeditor/pictures/#{asset.id}", :class => 'progressCancel remote-delete'%>
  
 		<script type="text/javascript" charset="utf-8">
 			$(document).ready(function() {
@@ -16,7 +16,7 @@
 			});
 		</script>
 	<% elsif controller.action_name == 'edit_files' -%>
-		<%= link_to '[X]', "/ckeditor/attachments/#{asset.id}", :class => 'remote-delete'%>
+		<%= link_to '', "/ckeditor/attachments/#{asset.id}", :class => 'progressCancel remote-delete'%>
  
 		<script type="text/javascript" charset="utf-8">
 			$(document).ready(function() {
