@@ -4,6 +4,6 @@ Rails.application.routes.draw do
     resources :attachments, :only => [:index, :create, :destroy]
   end
 	
-	match "edit_images" => "ckeditor/pictures#edit_images", :as => 'edit_images'
-	match "edit_files" => "ckeditor/attachments#edit_files", :as => 'edit_files'	
+	match "ckeditor/edit_images" => "ckeditor/pictures#edit_images", :as => 'edit_images'
+	match "ckeditor/edit_files" => "ckeditor/attachments#edit_files", :as => 'edit_files'	
 end
