@@ -27,14 +27,15 @@ end
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gemspec|
-    gemspec.name = "dust-ckeditor"
+    gemspec.name = "ckeditor"
     gemspec.version = Ckeditor::Version.dup
     gemspec.summary = "Rails plugin for integration ckeditor 3.x"
     gemspec.description = "CKEditor is a WYSIWYG editor to be used inside web pages"
-    gemspec.email = "axcess1@me.com"
-    gemspec.homepage = "http://github.com/hificreative/rails-3-ckeditor"
-    gemspec.authors = ["Ross Nelson"]
+    gemspec.email = "galeta.igor@gmail.com"
+    gemspec.homepage = "http://github.com/galetahub/rails-ckeditor"
+    gemspec.authors = ["Igor Galeta"]
     gemspec.files = FileList["[A-Z]*", "{app,config,lib}/**/*"]
+    gemspec.rubyforge_project = "ckeditor"
     
     gemspec.add_dependency('mime-types', '>= 1.16')
   end
