@@ -27,7 +27,7 @@ end
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gemspec|
-    gemspec.name = "ckeditor"
+    gemspec.name = "hifi-ckeditor"
     gemspec.version = Ckeditor::Version.dup
     gemspec.summary = "Rails plugin for integration ckeditor 3.x"
     gemspec.description = "CKEditor is a WYSIWYG editor to be used inside web pages"
